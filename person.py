@@ -17,7 +17,7 @@ class Person(object):
             self.is_alive = False
         else:
             self.is_vaccinated = True
-        self.infection = None
+            self.infection = None
         return self.is_alive
 
 ''' These are simple tests to ensure that you are instantiating your Person class correctly. '''
