@@ -13,8 +13,8 @@ class Simulation(object):
         self.initial_infected = initial_infected 
 
         self.next_person_id = 0 
+        self.current_infected = self.initial_infected
         self.total_infected = 0 
-        self.current_infected = 0 
         self.total_dead = 0 
         self.newly_infected = []
 
@@ -29,9 +29,6 @@ class Simulation(object):
             else:
                 self.population.append(Person(_id, True))
             _id += 1
-        
-        for i in self.population:
-            print(i._id, i.is_vaccinated)
 
         return self.population
 
@@ -45,25 +42,39 @@ class Simulation(object):
             return False
         return True
 
-    def time_step(self):
-        pass
-
     def interaction(self, person, random_person):
         assert person.is_alive == True
         assert random_person.is_alive == True
 
         if random_person.is_vaccinated: 
-            print("Nothing happens") # replace with logger method
-        # elif random_person.infection != None:
-        #     print("Nothing happens pt 2")
+            return False # replace with logger method
+        elif random_person.infection != None:
+            return False
         else:
             print("Something happens")
             infected_chance = random.randint(0, 100) 
             if infected_chance <= self.virus.repro_rate * 100:
                 random_person.infection = self.virus
+            return True
 
     def _infect_newly_infected(self):
-        pass
+        for person in self.newly_infected:
+            person.infected = self.virus
+        self.newly_infected = []
+
+    def time_step(self):
+        interactions = 0
+
+        random_person = self.population[random.randint(0, len(self.population) - 1)]
+        while (random_person.is_alive == False):
+            random_person = self.population[random.randint(0, len(self.population) - 1)]
+
+        while interactions < 100:
+            for infected_person in self.newly_infected:
+                if self.interaction(infected_person, random_person):
+                    self.newly_infected.append(infected_person._id)
+                    self._infect_newly_infected()
+            interactions += 1
 
     def run(self):
         time_step_counter = 0
