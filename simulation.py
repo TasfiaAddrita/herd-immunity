@@ -1,4 +1,4 @@
-import random, sys, math
+import random, sys, math, time
 from person import Person
 from logger import Logger
 from virus import Virus
@@ -162,29 +162,28 @@ class Simulation(object):
             # print("current", self.current_infected)
                 
     def run(self):
+        self._create_population()
+        self.logger.write_metadata(self.pop_size, self.vacc_percentage, self.virus.name, self.virus.mortality_rate, self.virus.repro_rate, self.initial_infected)
         time_step_counter = 0
         should_continue = True
 
         # while should_continue:
         while should_continue:
             self.time_step()
+            # self.logger.log_time_step()
             time_step_counter += 1
             should_continue = self._simulation_should_continue()
+            if should_continue:
+                self.logger.log_time_step(time_step_counter)
             # print(should_continue)
 
         print(f'The simulation has ended after {time_step_counter} turns.')
         # print('run function')
 
 def main():
+    random.seed(time.time())
     virus = Virus('Ebola', 0.25, 0.70)
     sim = Simulation(100, 0.50, virus, 10)
-    sim._create_population()
-
-    # for person in sim.population:
-    #     print(person._id, "vaccinated:", person.is_vaccinated, ',', "infected:", person.infection)
-    
-    # for infected in sim.newly_infected:
-    #     print(infected._id)
     sim.run()
 
 if __name__ == "__main__":
