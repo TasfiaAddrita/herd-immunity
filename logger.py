@@ -24,17 +24,17 @@ class Logger(object):
 
     def log_interaction(self, person, random_person):
         if random_person.is_vaccinated:
-            return print(f'{person._id} did not infect {random_person._id} because they are vaccinated.')
+            print(f'{person._id} did not infect {random_person._id} because they are vaccinated.')
         elif random_person.infection != None:
-            return print(f'{person._id} did not infect {random_person._id} because they are already infected.')
+            print(f'{person._id} did not infect {random_person._id} because they are already infected.')
         else:
-            return print(f'{person._id} infected {random_person._id}.')
+            print(f'{person._id} infected {random_person._id}.')
 
     def log_infection_survival(self, person):
         if person.is_alive:
-            return print(f'{person._id} survived the infection.')
+            print(f'{person._id} survived the infection and is now vaccinated.')
         else:
-            return print(f'{person._id} died from the infection.')
+            print(f'{person._id} died from the infection.')
 
     def log_time_step(self, time_step_number):
         pass
