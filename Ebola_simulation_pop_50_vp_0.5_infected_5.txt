@@ -1,0 +1,206 @@
+----------------- META DATA -----------------
+Virus
+	Name - Ebola 
+	Mortality - 70.0%
+	Reproduction - 25.0%
+
+Population
+	Size - 50
+	Vaccinated - 50.0%
+	Initial infected - 5
+--------------------------------------------
+
+1 infected 44.
+44 died from the infection.
+2 did not infect 23 because they are vaccinated.
+3 infected 49.
+49 died from the infection.
+4 did not infect 1 because they are already infected.
+1 survived the infection and is now vaccinated.
+5 did not infect 31 because they are vaccinated.
+1 infected 39.
+39 died from the infection.
+2 did not infect 18 because they are vaccinated.
+3 infected 45.
+45 survived the infection and is now vaccinated.
+4 did not infect 14 because they are vaccinated.
+5 infected 37.
+37 died from the infection.
+45 did not infect 7 because they are vaccinated.
+Time step 1 ended, beginning 2
+
+1 did not infect 26 because they are vaccinated.
+2 did not infect 7 because they are vaccinated.
+3 infected 42.
+42 died from the infection.
+4 infected 41.
+41 died from the infection.
+5 did not infect 31 because they are vaccinated.
+45 did not infect 10 because they are vaccinated.
+1 did not infect 12 because they are vaccinated.
+2 did not infect 5 because they are already infected.
+5 survived the infection and is now vaccinated.
+3 did not infect 27 because they are vaccinated.
+4 did not infect 1 because they are vaccinated.
+5 did not infect 9 because they are vaccinated.
+45 infected 46.
+46 died from the infection.
+Time step 2 ended, beginning 3
+
+1 did not infect 18 because they are vaccinated.
+2 did not infect 31 because they are vaccinated.
+3 did not infect 15 because they are vaccinated.
+4 did not infect 2 because they are already infected.
+2 died from the infection.
+45 did not infect 23 because they are vaccinated.
+1 infected 50.
+50 died from the infection.
+3 did not infect 1 because they are vaccinated.
+4 infected 43.
+43 died from the infection.
+5 did not infect 16 because they are vaccinated.
+45 did not infect 9 because they are vaccinated.
+Time step 3 ended, beginning 4
+
+1 did not infect 4 because they are already infected.
+4 survived the infection and is now vaccinated.
+3 did not infect 10 because they are vaccinated.
+4 did not infect 15 because they are vaccinated.
+5 did not infect 1 because they are vaccinated.
+45 infected 32.
+32 died from the infection.
+1 did not infect 9 because they are vaccinated.
+3 did not infect 14 because they are vaccinated.
+4 did not infect 13 because they are vaccinated.
+5 did not infect 3 because they are already infected.
+3 died from the infection.
+1 did not infect 16 because they are vaccinated.
+4 did not infect 8 because they are vaccinated.
+5 did not infect 24 because they are vaccinated.
+45 did not infect 11 because they are vaccinated.
+Time step 4 ended, beginning 5
+
+1 did not infect 11 because they are vaccinated.
+4 did not infect 5 because they are vaccinated.
+5 did not infect 19 because they are vaccinated.
+45 did not infect 29 because they are vaccinated.
+1 infected 40.
+40 died from the infection.
+4 did not infect 25 because they are vaccinated.
+5 did not infect 29 because they are vaccinated.
+45 did not infect 23 because they are vaccinated.
+1 did not infect 4 because they are vaccinated.
+4 infected 36.
+36 died from the infection.
+5 infected 47.
+47 died from the infection.
+45 did not infect 12 because they are vaccinated.
+Time step 5 ended, beginning 6
+
+1 did not infect 8 because they are vaccinated.
+4 did not infect 29 because they are vaccinated.
+5 did not infect 27 because they are vaccinated.
+45 did not infect 12 because they are vaccinated.
+1 infected 38.
+38 died from the infection.
+4 did not infect 7 because they are vaccinated.
+5 did not infect 17 because they are vaccinated.
+45 did not infect 20 because they are vaccinated.
+1 infected 35.
+35 died from the infection.
+4 did not infect 30 because they are vaccinated.
+5 did not infect 26 because they are vaccinated.
+45 did not infect 26 because they are vaccinated.
+Time step 6 ended, beginning 7
+
+1 did not infect 26 because they are vaccinated.
+4 did not infect 1 because they are vaccinated.
+5 did not infect 24 because they are vaccinated.
+45 did not infect 1 because they are vaccinated.
+1 did not infect 20 because they are vaccinated.
+4 infected 34.
+34 died from the infection.
+5 did not infect 19 because they are vaccinated.
+45 did not infect 30 because they are vaccinated.
+1 did not infect 1 because they are vaccinated.
+4 did not infect 24 because they are vaccinated.
+5 did not infect 13 because they are vaccinated.
+45 did not infect 7 because they are vaccinated.
+Time step 7 ended, beginning 8
+
+1 did not infect 8 because they are vaccinated.
+4 did not infect 19 because they are vaccinated.
+5 did not infect 5 because they are vaccinated.
+45 did not infect 27 because they are vaccinated.
+1 did not infect 8 because they are vaccinated.
+4 did not infect 30 because they are vaccinated.
+5 did not infect 6 because they are vaccinated.
+45 did not infect 21 because they are vaccinated.
+1 did not infect 25 because they are vaccinated.
+4 did not infect 27 because they are vaccinated.
+5 did not infect 27 because they are vaccinated.
+45 did not infect 14 because they are vaccinated.
+Time step 8 ended, beginning 9
+
+1 did not infect 11 because they are vaccinated.
+4 did not infect 5 because they are vaccinated.
+5 did not infect 27 because they are vaccinated.
+45 did not infect 20 because they are vaccinated.
+1 did not infect 5 because they are vaccinated.
+4 did not infect 27 because they are vaccinated.
+5 did not infect 30 because they are vaccinated.
+45 did not infect 29 because they are vaccinated.
+1 did not infect 4 because they are vaccinated.
+4 did not infect 20 because they are vaccinated.
+5 did not infect 14 because they are vaccinated.
+45 did not infect 24 because they are vaccinated.
+Time step 9 ended, beginning 10
+
+1 infected 48.
+48 survived the infection and is now vaccinated.
+4 did not infect 18 because they are vaccinated.
+5 did not infect 7 because they are vaccinated.
+45 did not infect 24 because they are vaccinated.
+48 did not infect 21 because they are vaccinated.
+1 did not infect 19 because they are vaccinated.
+4 did not infect 16 because they are vaccinated.
+5 did not infect 17 because they are vaccinated.
+45 did not infect 28 because they are vaccinated.
+48 did not infect 18 because they are vaccinated.
+Time step 10 ended, beginning 11
+
+1 did not infect 11 because they are vaccinated.
+4 did not infect 30 because they are vaccinated.
+5 did not infect 11 because they are vaccinated.
+45 did not infect 19 because they are vaccinated.
+48 did not infect 5 because they are vaccinated.
+1 did not infect 15 because they are vaccinated.
+4 did not infect 9 because they are vaccinated.
+5 did not infect 4 because they are vaccinated.
+45 did not infect 48 because they are vaccinated.
+48 did not infect 1 because they are vaccinated.
+Time step 11 ended, beginning 12
+
+1 did not infect 28 because they are vaccinated.
+4 did not infect 14 because they are vaccinated.
+5 did not infect 11 because they are vaccinated.
+45 did not infect 30 because they are vaccinated.
+48 did not infect 5 because they are vaccinated.
+1 did not infect 1 because they are vaccinated.
+4 did not infect 20 because they are vaccinated.
+5 did not infect 8 because they are vaccinated.
+45 did not infect 10 because they are vaccinated.
+48 did not infect 9 because they are vaccinated.
+Time step 12 ended, beginning 13
+
+1 did not infect 18 because they are vaccinated.
+4 did not infect 14 because they are vaccinated.
+5 did not infect 23 because they are vaccinated.
+45 infected 33.
+33 died from the infection.
+48 did not infect 45 because they are vaccinated.
+1 did not infect 19 because they are vaccinated.
+4 did not infect 23 because they are vaccinated.
+5 did not infect 21 because they are vaccinated.
+45 did not infect 22 because they are vaccinated.
+48 did not infect 24 because they are vaccinated.
