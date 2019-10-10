@@ -33,8 +33,19 @@ class Logger(object):
             f.write(f'{person._id} died from the infection.\n')
         f.close()
 
-    def log_time_step(self, time_step_number):
+    def log_time_step_start(self, time_step_number):
+        f = open(self.file_name, 'a')
+        f.write(f'------------------------ TIME STEP {time_step_number} -------------------------\n')
+        f.close()
+
+    def log_time_step_stats(self, stats):
         f = open(self.file_name, 'a')
         # print(f'Time step {time_step_number} ended, beginning {time_step_number + 1}\n')
-        f.write(f'Time step {time_step_number} ended, beginning {time_step_number + 1}\n\n')
+        # f.write(f'Time step {time_step_number} ended, beginning {time_step_number + 1}\n')
+        f.write('STATS -----------------\n')
+        f.write(f'# of people infected during this time step: {stats[0]}\n')
+        f.write(f'total # of people infected at the end of this time step: {stats[1]}\n')
+        f.write(f'# of people who died during this time step: {stats[2]}\n')
+        f.write(f'total # of people who died at the end of this time step: {stats[3]}\n--------------------------------------------------------------\n\n\n')
+
         f.close()

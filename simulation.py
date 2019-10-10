@@ -31,6 +31,7 @@ class Simulation(object):
                 infected = Person(_id, False, self.virus)
                 self.population.append(infected)
                 self.current_infected.append(infected)
+                self.total_infected += 1
             else:
                 if vaccinated_pop <= total_vaccinated_population:
                     self.population.append(Person(_id, True))
@@ -64,12 +65,14 @@ class Simulation(object):
         self.logger.log_interaction(person, random_person)
 
         can_be_infected = False
+        dead = 0
 
         if random_person.is_vaccinated:
             can_be_infected = False
         elif random_person.infection != None:
             can_be_infected = False
             if random_person.did_survive_infection() == False:
+                dead += 1
                 self.total_dead += 1
                 self.pop_size -= 1
                 random_person.virus = None
@@ -82,7 +85,7 @@ class Simulation(object):
                 random_person.infection = self.virus
             can_be_infected = True
 
-        return can_be_infected
+        return can_be_infected, dead
 
     # def _infect_newly_infected(self):
         # print(self.newly_infected)
@@ -96,29 +99,31 @@ class Simulation(object):
     def time_step(self):
         interactions = 0
         interactions_limit = 10
+        infected = 0
+        dead = 0
 
         while interactions < interactions_limit:
-            # if len(self.current_infected) == 0:
-            #     break
-
+            # infected = 0
             # infected interacts with random person
             for infected_person in self.current_infected:
-                repro_pop = 0
                 # picks random person
                 random_index = random.randint(0, len(self.new_population) - 1)
                 random_person = self.new_population[random_index]
                 while (random_person.is_alive == False):
                     random_person = self.new_population[random_index]
 
-                # interaction occurs
-                if self.interaction(infected_person, random_person):
+                # if random person gets infected, interaction occurs
+                interaction = self.interaction(infected_person, random_person)
+                if interaction[0]:
                     random_person.infection = self.virus
-                    repro_pop += 1
+                    infected += 1
+                    self.total_infected += 1
+                    # if infected person dies
                     if random_person.did_survive_infection() == False:
+                        dead += 1 + interaction[1]
                         self.total_dead += 1
                         self.pop_size -= 1
                         random_person.virus = None
-                        
                         self.new_population.remove(random_person)
                     else:
                         self.current_infected.append(random_person)
@@ -127,21 +132,21 @@ class Simulation(object):
                     random_person.is_vaccinated = True
 
                 interactions += 1
-                # if interactions == interactions_limit:
-                #     break
+        return (infected, self.total_infected, dead, self.total_dead)
                 
     def run(self):
         self._create_population()
         self.logger.write_metadata(self.pop_size, self.vacc_percentage, self.virus.name, self.virus.mortality_rate, self.virus.repro_rate, self.initial_infected)
-        time_step_counter = 0
+        time_step_counter = 1
         should_continue = True
 
         while should_continue:
-            self.time_step()
+            self.logger.log_time_step_start(time_step_counter)
+            stats = self.time_step()
             time_step_counter += 1
             should_continue = self._simulation_should_continue()
             if should_continue:
-                self.logger.log_time_step(time_step_counter)
+                self.logger.log_time_step_stats(stats)
 
         print(f'The simulation has ended after {time_step_counter} turns.')
 
