@@ -12,12 +12,25 @@ class Person(object):
         self.infection = infection 
 
     def did_survive_infection(self):
+        try:
+            assert self.is_vaccinated != True
+        except AssertionError:
+            print("error vac")
+
+        try:
+            assert self.infection != None
+        except AssertionError:
+            print("error infect")
+
         mortality = random.randint(0, 100)
+
+        # person dies, virus is removed
         if mortality < self.infection.mortality_rate * 100:
             self.is_alive = False
+        # person survives, is vaccinated, virus is removed
         else:
             self.is_vaccinated = True
-            self.infection = None
+        self.infection = None
         return self.is_alive
 
 ''' These are simple tests to ensure that you are instantiating your Person class correctly. '''

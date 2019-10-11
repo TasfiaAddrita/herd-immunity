@@ -5,7 +5,7 @@ class Logger(object):
 
     def write_metadata(self, pop_size, vacc_percentage, virus_name, mortality_rate, basic_repro_num, initial_infected):
         f = open(self.file_name, 'w+')
-        f.write(f'----------------- META DATA -----------------\nVirus\n\tName - {virus_name} \n\tMortality - {mortality_rate * 100}%\n\tReproduction - {basic_repro_num * 100}%\n\nPopulation\n\tSize - {pop_size}\n\tVaccinated - {vacc_percentage * 100}%\n\tInitial infected - {initial_infected}\n--------------------------------------------\n\n')
+        f.write(f'------------------------ META DATA ------------------------\nVirus\n\tName - {virus_name} \n\tMortality - {mortality_rate * 100}%\n\tReproduction - {basic_repro_num * 100}%\n\nPopulation\n\tSize - {pop_size}\n\tVaccinated - {vacc_percentage * 100}%\n\tInitial infected - {initial_infected}\n--------------------------------------------------------------\n\n')
 
         f.close()
 
@@ -35,7 +35,7 @@ class Logger(object):
 
     def log_time_step_start(self, time_step_number):
         f = open(self.file_name, 'a')
-        f.write(f'------------------------ TIME STEP {time_step_number} -------------------------\n')
+        f.write(f'\n------------------------ TIME STEP {time_step_number} -------------------------\n')
         f.close()
 
     def log_time_step_stats(self, stats):
@@ -49,3 +49,13 @@ class Logger(object):
         f.write(f'total # of people who died at the end of this time step: {stats[3]}\n--------------------------------------------------------------\n\n\n')
 
         f.close()
+
+    # def log_time_step_stats(self, stats):
+    #     f = open(self.file_name, 'a')
+    #     f.write(f'# of people infected during this time step: {stats}\n')
+    #     f.close()
+
+    # def log_time_step(self, time_step_number):
+    #     f = open(self.file_name, 'a')
+    #     f.write(f'time_step')
+    #     f.close()

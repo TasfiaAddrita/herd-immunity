@@ -1,0 +1,170 @@
+------------------------ META DATA ------------------------
+Virus
+	Name - Ebola 
+	Mortality - 70.0%
+	Reproduction - 25.0%
+
+Population
+	Size - 100
+	Vaccinated - 50.0%
+	Initial infected - 10
+--------------------------------------------------------------
+
+
+------------------------ TIME STEP 1 -------------------------
+1 did not infect 21 because they are vaccinated.
+2 did not infect 23 because they are vaccinated.
+3 did not infect 61 because they are vaccinated.
+4 infected 69.
+5 did not infect 6 because they are already infected.
+6 did not infect 32 because they are vaccinated.
+7 infected 81.
+8 did not infect 6 because they are already infected.
+9 infected 71.
+10 did not infect 36 because they are vaccinated.
+1 did not infect 52 because they are vaccinated.
+2 did not infect 59 because they are vaccinated.
+3 did not infect 41 because they are vaccinated.
+4 did not infect 37 because they are vaccinated.
+5 did not infect 50 because they are vaccinated.
+6 did not infect 53 because they are vaccinated.
+7 did not infect 33 because they are vaccinated.
+8 did not infect 11 because they are vaccinated.
+9 did not infect 11 because they are vaccinated.
+10 infected 77.
+1 did not infect 69 because they are vaccinated.
+2 did not infect 41 because they are vaccinated.
+3 did not infect 18 because they are vaccinated.
+4 did not infect 3 because they are already infected.
+5 did not infect 26 because they are vaccinated.
+6 did not infect 33 because they are vaccinated.
+7 did not infect 13 because they are vaccinated.
+8 did not infect 8 because they are already infected.
+9 did not infect 69 because they are vaccinated.
+10 infected 64.
+1 infected 79.
+2 did not infect 55 because they are vaccinated.
+3 infected 88.
+4 did not infect 26 because they are vaccinated.
+5 did not infect 50 because they are vaccinated.
+6 did not infect 25 because they are vaccinated.
+7 did not infect 38 because they are vaccinated.
+8 infected 85.
+9 infected 93.
+10 did not infect 58 because they are vaccinated.
+1 did not infect 36 because they are vaccinated.
+2 did not infect 39 because they are vaccinated.
+3 infected 92.
+4 did not infect 15 because they are vaccinated.
+5 infected 96.
+6 infected 86.
+7 did not infect 45 because they are vaccinated.
+8 did not infect 5 because they are already infected.
+9 did not infect 33 because they are vaccinated.
+10 infected 75.
+1 infected 84.
+2 did not infect 13 because they are vaccinated.
+3 infected 68.
+4 did not infect 59 because they are vaccinated.
+5 did not infect 30 because they are vaccinated.
+6 did not infect 44 because they are vaccinated.
+7 infected 90.
+8 did not infect 61 because they are vaccinated.
+9 did not infect 9 because they are already infected.
+10 did not infect 47 because they are vaccinated.
+1 did not infect 17 because they are vaccinated.
+2 did not infect 4 because they are already infected.
+3 did not infect 44 because they are vaccinated.
+4 did not infect 25 because they are vaccinated.
+5 did not infect 56 because they are vaccinated.
+6 did not infect 13 because they are vaccinated.
+7 infected 67.
+8 infected 76.
+9 did not infect 11 because they are vaccinated.
+10 infected 65.
+1 infected 97.
+2 did not infect 36 because they are vaccinated.
+3 did not infect 17 because they are vaccinated.
+4 did not infect 84 because they are vaccinated.
+5 did not infect 19 because they are vaccinated.
+6 infected 95.
+7 did not infect 13 because they are vaccinated.
+8 did not infect 71 because they are vaccinated.
+9 did not infect 48 because they are vaccinated.
+10 did not infect 6 because they are already infected.
+1 did not infect 61 because they are vaccinated.
+2 did not infect 4 because they are already infected.
+3 did not infect 46 because they are vaccinated.
+4 did not infect 33 because they are vaccinated.
+5 did not infect 31 because they are vaccinated.
+6 did not infect 51 because they are vaccinated.
+7 did not infect 38 because they are vaccinated.
+8 did not infect 44 because they are vaccinated.
+9 infected 82.
+10 did not infect 92 because they are vaccinated.
+1 did not infect 4 because they are already infected.
+2 did not infect 23 because they are vaccinated.
+3 did not infect 6 because they are already infected.
+4 did not infect 3 because they are already infected.
+5 infected 72.
+6 infected 63.
+7 did not infect 18 because they are vaccinated.
+8 did not infect 39 because they are vaccinated.
+9 did not infect 31 because they are vaccinated.
+10 infected 73.
+1 died from the infection.
+3 survived the infection and is now vaccinated.
+5 survived the infection and is now vaccinated.
+7 died from the infection.
+9 survived the infection and is now vaccinated.
+STATS -----------------
+# of people infected during this time step: 16
+total # of people infected at the end of this time step: 26
+# of people who died during this time step: 2
+total # of people who died at the end of this time step: 2
+--------------------------------------------------------------
+
+
+
+------------------------ TIME STEP 2 -------------------------
+2 did not infect 44 because they are vaccinated.
+4 did not infect 33 because they are vaccinated.
+6 did not infect 60 because they are vaccinated.
+8 did not infect 46 because they are vaccinated.
+10 did not infect 2 because they are already infected.
+2 did not infect 61 because they are vaccinated.
+4 did not infect 57 because they are vaccinated.
+6 did not infect 49 because they are vaccinated.
+8 infected 100.
+10 did not infect 52 because they are vaccinated.
+2 did not infect 45 because they are vaccinated.
+4 did not infect 63 because they are vaccinated.
+6 did not infect 28 because they are vaccinated.
+8 infected 80.
+10 did not infect 32 because they are vaccinated.
+2 did not infect 86 because they are already infected.
+4 did not infect 72 because they are vaccinated.
+6 did not infect 29 because they are vaccinated.
+8 did not infect 30 because they are vaccinated.
+10 infected 70.
+2 did not infect 5 because they are vaccinated.
+4 did not infect 20 because they are vaccinated.
+6 infected 74.
+8 did not infect 30 because they are vaccinated.
+10 did not infect 65 because they are vaccinated.
+2 did not infect 76 because they are already infected.
+4 did not infect 12 because they are vaccinated.
+6 did not infect 21 because they are vaccinated.
+8 did not infect 100 because they are vaccinated.
+10 infected 66.
+2 did not infect 52 because they are vaccinated.
+4 did not infect 70 because they are vaccinated.
+6 did not infect 82 because they are vaccinated.
+8 did not infect 23 because they are vaccinated.
+10 did not infect 38 because they are vaccinated.
+2 did not infect 47 because they are vaccinated.
+4 did not infect 59 because they are vaccinated.
+6 did not infect 17 because they are vaccinated.
+8 did not infect 22 because they are vaccinated.
+10 did not infect 52 because they are vaccinated.
+2 did not infect 8 because they are already infected.
